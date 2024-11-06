@@ -2,7 +2,8 @@
   //
 
   // find word function
-  function countWordOccurrences(sentence: string, word: string) {
+  function countWordOccurrences(sentence: string, word: string): number {
+    
     // make lowercase the sentence and word for case insensitive
     const lowSentence: string = sentence.toLocaleLowerCase();
     const lowWord: string = word.toLocaleLowerCase();
@@ -28,12 +29,8 @@
     return counter;
   }
 
-  // const output: number = countWordOccurrences(
-  //   "TypeScript is great. I love TypeScript!",
-  //   "typescript"
-  // );
   const output: number = countWordOccurrences(
-    "TypeScript is great. I love TypeScript!,of the typescript",
+    "TypeScript is great. I love TypeScript!",
     "typescript"
   );
 
